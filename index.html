@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Question Table</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+    position: sticky;
+    top: 0;
+    background-color: #f9f9f9;
+    padding: 1em;
+    margin: 0;               /* Remove margin */
+    z-index: 10;
+    border-bottom: 1px solid #ccc;
+    }
+
+    .table-container {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 0;              /* Remove padding here */
+    background-color: #f9f9f9;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;   /* Add this line */
+    }
+
+
+    thead th {
+        position: sticky;
+        top: 0;
+        background-color: #002060;
+        color: white;
+        border-bottom: 2px solid #001642;
+        padding: 8px;
+        text-align: left;
+        z-index: 5;
+
+        /* Add these for wrapping */
+        white-space: normal;
+        word-wrap: break-word;
+        word-break: break-word;
+        max-width: 300px;  /* Adjust as needed */
+    }
+
+    tbody td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+        vertical-align: top;
+        background-color: white;
+        /* Add these for wrapping */
+        white-space: normal;
+        word-wrap: break-word;
+        word-break: break-word;
+        max-width: 300px;  /* Adjust as needed */
+    }
+    </style>
+</head>
+<body>
+
+<h2>Assessment Questions</h2>
+
+<div class="table-container">
+  <table>
+    <colgroup>
+    <col style="width: 120px;">  <!-- narrow column for numbers -->
+    <col style="width: auto;">  <!-- flexible column for questions -->
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Question no.</th>
+        <th>Question text</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>Explain the problem with space debris.</td></tr>
+      <tr><td>2</td><td>Explain percolation theory and how it is used in NESSY.</td></tr>
+      <tr><td>3</td><td>Explain space sustainability.</td></tr>
+      <tr><td>4</td><td>What might lead to the number of space objects decreasing?</td></tr>
+      <tr><td>5</td><td>Why are Collision Avoidance Maneouvres important?</td></tr>
+      <tr><td>6</td><td>Why would reducing ADR increase the number of space debris objects?</td></tr>
+      <tr><td>7</td><td>Why would increasing the failure rate of CAMs increase the value of alpha_x?</td></tr>
+      <tr><td>8</td><td>Why would increasing the frequency of new satellite launches contribute to reducing the health of the space environment?</td></tr>
+      <tr><td>9</td><td>What might lead to the number of space objects increasing in certain orbital shells?</td></tr>
+      <tr><td>10</td><td>Explain the effect of increasing ADR and PMD rates to offset an increase in satellite launches.</td></tr>
+      <tr><td>11</td><td>Why would improving PMD and CAMs improve the health of the space environment?</td></tr>
+      <tr><td>12</td><td>Why might there be less space debris in very low orbits after 100 years?</td></tr>
+      <tr><td>13</td><td>Why would increasing the CAM failure rate from 10% to 50% result in an increase of alpha_x from 0.4911 to 0.5927?</td></tr>
+      <tr><td>14</td><td>Why would increasing ADR from 0 to 1,000 large objects per year result in a decrease of alpha_x from 0.4911 to 0.4578?</td></tr>
+      <tr><td>15</td><td>Why would reducing the satellite lifetime from 5 years to 1 year result in a decrease of alpha_x to from 0.4911 to 0.4879?</td></tr>
+      <tr><td>16</td><td>Why would reducing the PMD failure rate from 0.1% to 0% result in a decrease of alpha_x from 0.4911 to 0.4707 and lambda_x from 0.0150 to 0.0098?</td></tr>
+      <tr><td>17</td><td>Why would the number of large space debris objects in orbit increase the values of alpha_x and lambda_x?</td></tr>
+      <tr><td>18</td><td>What is the significance of CAM, PMD and ADR mission system failure rates on the values of the health indicators?</td></tr>
+      <tr><td>19</td><td>Do orbital shells with the largest number of fragments pose the highest risk for collision, and therefore the highest risk to the health of the space environment?</td></tr>
+      <tr><td>20</td><td>Which object orbital shell populations are most likely to contribute to the health of the space environment?</td></tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
